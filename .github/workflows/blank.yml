@@ -1,0 +1,16 @@
+name: CI
+
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  compilepawn:
+    runs-on: ubuntu-latest
+    container: sacnr/pawncc
+    steps:
+      - run: /pawnc/bin/pawncc
+        name: TEst
