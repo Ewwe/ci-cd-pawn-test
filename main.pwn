@@ -5,3 +5,8 @@ new test = 0;
  main() {
     print("TEST");
  }
+
+ public OnPlayerConnect(playerid) {
+
+     
+ }
