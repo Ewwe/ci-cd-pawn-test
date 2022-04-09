@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     container: sacnr/pawncc
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
       - run: /pawnc/bin/pawncc main.pwn -iinclude -d2 -Z
         name: Test
       - name: Upload amx
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v1
         with: 
           name: compiled_script.amx
           path: main.amx
