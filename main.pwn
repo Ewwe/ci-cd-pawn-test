@@ -1,4 +1,4 @@
-#include <a_samp>
+#include <a_samp.inc>
 
  main() {
      print('test');
