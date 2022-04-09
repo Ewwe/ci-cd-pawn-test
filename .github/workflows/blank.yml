@@ -10,10 +10,9 @@ on:
 jobs:
   compilepawn:
     runs-on: ubuntu-latest
+    container: sacnr/pawncc
     steps:
       - uses: actions/checkout@v1
-      - uses: sacnr/pawncc@latest
-      
       - run: /pawnc/bin/pawncc main
         name: Test
       - name: Upload amx
