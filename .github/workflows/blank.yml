@@ -13,12 +13,9 @@ jobs:
     container: sacnr/pawncc
     steps:
       - uses: actions/checkout@v1
-      
       - run: /pawnc/bin/pawncc main.pwn -iinclude -d2 -Z
         name: Test
-      - run: ls
       - name: Upload amx
         uses: actions/upload-artifact@v2
         with: 
-          name: main.amx
           path: main.amx
