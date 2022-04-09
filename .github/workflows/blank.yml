@@ -14,7 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: ls
-      - run: /pawnc/bin/pawncc main.pwn -i/samp/include -d2
+      - run: ls include
+      - run: /pawnc/bin/pawncc main.pwn -i/samp/include -d2 -Z
         name: Test
       - name: Upload amx
         uses: actions/upload-artifact@v2
