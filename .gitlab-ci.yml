@@ -1,0 +1,13 @@
+image: sacnr/pawncc
+
+stages: 
+  - build
+
+build-job: 
+  stage: build
+  script:
+      - /pawnc/bin/pawncc main.pwn -iinclude -d2 -Z
+  artifacts:
+    paths:
+      - main.amx
+    expire_in: 1 week
