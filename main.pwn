@@ -7,5 +7,5 @@ new test = 0;
  }
 
  public OnPlayerConnect(playerid) {
-   SendClientMessage(playerid,'Ahoj');
+   SendClientMessage(playerid,"ahoj");
  }
